@@ -1,10 +1,10 @@
 Getting Started with ruby 2.4 rails 5.1 with neo4j graphdb
 
-#from cli
 rails new appname -m http://neo4jrb.io/neo4j/neo4j.rb -O
 cd appname
 rake neo4j:install[community-latest]
 rake neo4j:start
+
 
 #now that you have neo4j installed go to localhost:7474 in a browser and create a new user for the app. 
 #the default credentials are formatted as user:password = neo4j:neo4j 
