@@ -29,7 +29,7 @@ require "rails/test_unit/railtie"
 
 Bundler.require(*Rails.groups)
 
-module appname
+module Appname
   class Application < Rails::Application
     
     config.generators do |g|
