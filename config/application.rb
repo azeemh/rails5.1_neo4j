@@ -23,6 +23,10 @@ module Myapp
     config.generators do |g|
       g.orm             :neo4j
     end
+    
+    config.neo4j.session.type = :http
+    config.neo4j.session.url = 'http://NEO4jUSERNAME:PASSWORD@127.0.0.1:7474'
+    config.neo4j.session.options = {faraday_options: { ssl: { verify: true }}}
 
     # Configure where the embedded neo4j database should exist
     # Notice embedded db is only available for JRuby
