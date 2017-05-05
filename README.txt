@@ -1,5 +1,6 @@
 Getting Started with ruby 2.4 rails 5.1 with neo4j graphdb
 
+From CLI
 rails new appname -m http://neo4jrb.io/neo4j/neo4j.rb -O
 cd appname
 rake neo4j:install[community-latest]
