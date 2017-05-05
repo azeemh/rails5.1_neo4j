@@ -46,8 +46,11 @@ end
 #########################################################################################################################
 
 
-#NOW it's back to your Terminal/CLI, run:
-rails g scaffold (insert any model scaffold here)
+#NOW it's back to your Terminal/CLI, run the following to create a user for your app:
+rails generate scaffold User name:string email:string 
+
+#run the following to create additional app models/scaffolds. (rails g is short syntax for rails generate, rails s for rails server)
+rails g scaffold (insert any additional model scaffold here)
 rails neo4j:migrate RAILS_ENV=development
 rails s
 open localhost:3000
