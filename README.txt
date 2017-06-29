@@ -11,9 +11,9 @@ rake neo4j:start
 #to securely use neo4j you must set up your own. (use in application.rb with a private repo or as ENV variable)
 
 
-############################################################################################################
+###########################################################################################################
 #application.rb -- replace NEO4jUsername and PASSWORD with the values you created in neo4j web admin:
-############################################################################################################
+###########################################################################################################
 require_relative 'boot'
 
 require "rails"
@@ -43,7 +43,7 @@ module Appname
     config.load_defaults 5.1
   end
 end
-#########################################################################################################################
+##########################################################################################################
 
 
 #NOW it's back to your Terminal/CLI, run the following to create a user for your app:
